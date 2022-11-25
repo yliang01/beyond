@@ -11,7 +11,7 @@ then
     echo "listen = 0.0.0.0:$(($1+1))" >> beyond-v4.0.0.conf
     echo "psk = $2" >> beyond-v4.0.0.conf
     echo "ipv6 = false" >> beyond-v4.0.0.conf
-    ./beyond-v4.0.0 -c beyond-v4.0.0.conf &
+    ./beyond-v4.0.0 -c beyond-v4.0.0.conf
 else
     exec "$@"
 fi
